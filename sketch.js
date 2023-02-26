@@ -54,7 +54,8 @@ function mousePressed() {
         squishedCount++; // increment squished count
         break;
       }esle{
-        continue;
+        squishedCount +=0;
+        break;
       }   
     }
   }
