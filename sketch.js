@@ -52,8 +52,10 @@ function mousePressed() {
       if(!this.dead){
         bugs[i].dead = true;
         squishedCount++; // increment squished count
-      }
-      break;
+        break;
+      }esle{
+        continue;
+      }   
     }
   }
 }
