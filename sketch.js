@@ -48,15 +48,10 @@ function draw() {
 
 function mousePressed() {
   for (let i = bugs.length - 1; i >= 0; i--) {
-    if (bugs[i].isClicked(mouseX, mouseY)) {
-      if(bugs[i].dead){
-         squishedCount +=0;
-         break;   
-      }esle{
+    if (bugs[i].isClicked(mouseX, mouseY)) {   
         bugs[i].dead = true;
         squishedCount++; // increment squished count
-        break;
-      }   
+        break;  
     }
   }
 }
