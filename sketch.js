@@ -49,12 +49,12 @@ function draw() {
 function mousePressed() {
   for (let i = bugs.length - 1; i >= 0; i--) {
     if (bugs[i].isClicked(mouseX, mouseY)) {
-      if(!this.dead){
+      if(bugs[i].dead = true){
+         squishedCount +=0;
+         break;   
+      }esle{
         bugs[i].dead = true;
         squishedCount++; // increment squished count
-        break;
-      }esle{
-        squishedCount +=0;
         break;
       }   
     }
